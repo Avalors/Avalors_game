@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement; //allows us to add scenes from our unity game
 
 public class MainMenuController : MonoBehaviour
 {
-    [Header("levels to load")]
-    public string _newGamelevel; //what i intend to run as the game later on
-    private string levelToLoad;
+    [Header("map selection to load")]
+    public string _mapSelection; //what i intend to run as the map selection scene
 
-    public void NewgamedialogYes()//allow us to control the on click event
+    public void startgamedialogue_yesbutton()//allow us to control the on click event
     {
+        SceneManager.LoadScene(_mapSelection); //this allows us to load a scene that we attach, when we click the yes button
+    }
 
+    public void exitgamedialogue_yesbutton() //closes the game when we press the yes button on the exit game dialogue button
+    {
+        Application.Quit();
     }
 }
