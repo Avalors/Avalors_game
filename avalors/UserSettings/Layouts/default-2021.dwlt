@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 629.3334
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 41
+  controlID: 54
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 16
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47
+  controlID: 17
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,10 +306,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: de5b0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: b2ecffffd0eeffff64efffffa8f1ffff3ef2ffffaaf2ffff2cf3ffff6ef3ffffb0f3fffff6f3ffff88f4ffffcaf4ffff24f5ffffa2f5ffff1cf6fffff2f6ffffcef7ffff08f8ffff06f9ffff3afbffffb45a0000985d00006c5f00007a600000fa600000d861000058620000
+      scrollPos: {x: 0, y: 34.666656}
+      m_SelectedIDs: cc5a0000
+      m_LastClickedID: 23244
+      m_ExpandedIDs: 3afbffff405a0000565a0000b45a0000d25a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -558,9 +558,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 960, y: 540, z: 0}
+    m_Target: {x: 912.95123, y: 557.29663, z: 4.640727}
     speed: 2
-    m_Value: {x: 960, y: 540, z: -0.00000074212596}
+    m_Value: {x: 912.95123, y: 557.29663, z: 4.640727}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -609,11 +609,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.000000013314254, y: 0.0000001373989, z: -0.000000032143454, w: -1}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1101.4536
+    m_Target: 663.74817
     speed: 2
-    m_Value: 1101.4536
+    m_Value: 663.74817
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -771,21 +771,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\work\a level work\computer science\component 3\projects\Avalors_game\avalors
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0.9999695}
-    m_SelectedIDs: da5b0000
-    m_LastClickedID: 23514
+    m_SelectedIDs: ce5b0000
+    m_LastClickedID: 23502
     m_ExpandedIDs: 00000000ca5b0000cc5b0000ce5b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
