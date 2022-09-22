@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 181614921}
   - component: {fileID: 181614920}
   m_Layer: 5
-  m_Name: exitgamedialogue_Nobutton
+  m_Name: Gameplay Dialog_Back btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,18 +838,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181614918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.0020924604, y: -0.007121562, z: 0.28189608, w: 0.9594163}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 686169222}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.46, y: -0.715, z: 32.745}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.5278, y: 2.044}
-  m_SizeDelta: {x: 127.5524, y: 78.6156}
+  m_AnchoredPosition: {x: 773.5, y: -419.3}
+  m_SizeDelta: {x: 234.46, y: 81.4082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181614920
 MonoBehaviour:
@@ -907,7 +907,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1540540021}
+      - m_Target: {fileID: 1194575432}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -939,7 +939,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: 'BACK
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
   m_sharedMaterial: {fileID: -4165769264711911355, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
@@ -1002,7 +1004,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0879517, y: 0, z: -4.0878906, w: 0.00018310547}
+  m_margin: {x: 0.7180252, y: 0, z: -0.7733383, w: 0.00018310547}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1164,7 +1166,7 @@ GameObject:
   - component: {fileID: 367915882}
   - component: {fileID: 367915881}
   m_Layer: 5
-  m_Name: settinggamedialogue_Nobutton
+  m_Name: Sound Dialog_Back btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,18 +1179,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367915879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.29046154, w: 0.9568867}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 645190591}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 33.771}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.5278, y: 2.044}
-  m_SizeDelta: {x: 127.5524, y: 78.6156}
+  m_AnchoredPosition: {x: 769.7, y: -420.2}
+  m_SizeDelta: {x: 236.5809, y: 82.3867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367915881
 MonoBehaviour:
@@ -1246,7 +1248,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1540540021}
+      - m_Target: {fileID: 1194575432}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1278,7 +1280,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: 'BACK
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
   m_sharedMaterial: {fileID: -4165769264711911355, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
@@ -1341,7 +1345,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0879517, y: 0, z: -4.0878906, w: 0.00018310547}
+  m_margin: {x: 4.0879517, y: 0, z: -4.0878906, w: 0.00021362305}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1582,7 +1586,7 @@ GameObject:
   - component: {fileID: 520229187}
   - component: {fileID: 520229186}
   m_Layer: 5
-  m_Name: settinggamedialogue_yesbutton
+  m_Name: Sound Dialog_Reset btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1603,10 +1607,10 @@ RectTransform:
   m_Father: {fileID: 645190591}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201.17407, y: -8.175903}
-  m_SizeDelta: {x: 176.608, y: 99.0554}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 262, y: 38.51999}
+  m_SizeDelta: {x: 523.999, y: 77.032715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520229186
 MonoBehaviour:
@@ -1696,7 +1700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes
+  m_text: reset to default
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
   m_sharedMaterial: {fileID: -4165769264711911355, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
@@ -1723,8 +1727,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59
-  m_fontSizeBase: 59
+  m_fontSize: 45.02
+  m_fontSizeBase: 45.02
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2182,7 +2186,7 @@ GameObject:
   - component: {fileID: 575080469}
   - component: {fileID: 575080468}
   m_Layer: 5
-  m_Name: exitgamedialogue_yesbutton
+  m_Name: Gameplay Dialog_Reset btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2203,10 +2207,10 @@ RectTransform:
   m_Father: {fileID: 686169222}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201.17407, y: -8.175903}
-  m_SizeDelta: {x: 176.608, y: 99.0554}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 262.2826, y: 43.713623}
+  m_SizeDelta: {x: 524.5652, y: 87.42709}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575080468
 MonoBehaviour:
@@ -2284,7 +2288,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes
+  m_text: 'reset to default
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
   m_sharedMaterial: {fileID: -4165769264711911355, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
@@ -2311,8 +2317,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59
-  m_fontSizeBase: 59
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4796,7 +4802,7 @@ GameObject:
   - component: {fileID: 1400891413}
   - component: {fileID: 1400891412}
   m_Layer: 5
-  m_Name: startgamedialogue_yesbutton
+  m_Name: Graphics Dialog_Reset btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4817,10 +4823,10 @@ RectTransform:
   m_Father: {fileID: 1773467446}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201.17407, y: -8.175903}
-  m_SizeDelta: {x: 176.608, y: 99.0554}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 260.07678, y: 40.719055}
+  m_SizeDelta: {x: 520.1605, y: 81.440094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400891412
 MonoBehaviour:
@@ -4898,7 +4904,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes
+  m_text: 'reset to default
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
   m_sharedMaterial: {fileID: -4165769264711911355, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
@@ -4925,8 +4933,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59
-  m_fontSizeBase: 59
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4961,7 +4969,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0879517, y: 0, z: -4.0878906, w: 0.00018310547}
+  m_margin: {x: 4.0879517, y: 0, z: 0.3166504, w: 0.00018310547}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5120,7 +5128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1540540022
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5303,7 +5311,7 @@ GameObject:
   - component: {fileID: 1559784159}
   - component: {fileID: 1559784158}
   m_Layer: 5
-  m_Name: startgamedialogue_Nobutton (1)
+  m_Name: Graphics Dialog_Back btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5316,18 +5324,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559784156}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.0025875038, y: -0.00030662963, z: 0.30020458, w: 0.9538713}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1773467446}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.272, y: -0.123, z: 34.94}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.5278, y: 2.044}
-  m_SizeDelta: {x: 127.5524, y: 78.6156}
+  m_AnchoredPosition: {x: 767, y: -428}
+  m_SizeDelta: {x: 250.8071, y: 91.8292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559784158
 MonoBehaviour:
@@ -5385,7 +5393,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1540540021}
+      - m_Target: {fileID: 1194575432}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5417,7 +5425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: BACK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
   m_sharedMaterial: {fileID: -4165769264711911355, guid: 01ff378e081a4d14bad03998610aae51, type: 2}
@@ -5480,7 +5488,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 4.0879517, y: 0, z: -4.0878906, w: 0.00018310547}
+  m_margin: {x: 4.0879517, y: -0.74168587, z: -4.0878906, w: 0.00018310547}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6178,7 +6186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1773467446
 RectTransform:
   m_ObjectHideFlags: 0
