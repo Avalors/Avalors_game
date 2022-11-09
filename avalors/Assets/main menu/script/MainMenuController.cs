@@ -10,6 +10,7 @@ public class MainMenuController : MonoBehaviour
     [Header("Volume setting")]
     [SerializeField] private TMP_Text volumeTextValue = null; //This initialise the volume number value on the right of the slider
     [SerializeField] private Slider volumeSlider = null; //This initialises the volume slider it self
+    [SerializeField] private float defaultVolume = 0.5f; //This is the variable that holds the on-reset value of the volume
 
     [Header("Confirmation")]
     [SerializeField] private GameObject confirmationPrompt = null; //initialises our volume confirmation prompt
@@ -37,6 +38,17 @@ public class MainMenuController : MonoBehaviour
     {
         PlayerPrefs.SetFloat("masterVolume", AudioListener.volume); //stores applied volume locally
         StartCoroutine(ConfirmationBox()); //shows my prompt by calling upon the method like an embedded method
+    }
+
+    public void ResetButton(string MenuType)
+    {
+        if (MenuType == "Audio") //if the settings menu where used is the audio menu
+        {
+            AudioListener.volume = defaultVolume; //Sets volume to default
+            volumeSlider.value = defaultVolume; //sets the value of the slider to default
+            volumeTextValue.text = defaultVolume.ToString("0.0"); //setes value of the text value to the default
+            VolumeApply(); //permenantly applies the default volume
+        }
     }
 
     public IEnumerator ConfirmationBox() //shows prompt
