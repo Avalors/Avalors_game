@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    [Header("References")]
+    //attribute to store wall running script 
+    [SerializeField] WallRunning WallRun;
+
     //sensativity variables: set to serialize field to allow us to edit the private variables (attributes) in the inspector
     [SerializeField] private float SensitivityX = 360f; 
     [SerializeField] private float SensitivityY = 360f;
 
-    //our player camera
-    Camera cam; 
+    //To reference our camera and orientation
+    [SerializeField] Transform cam;
+    [SerializeField] Transform orientation;
 
     //horizontal and vertical mouse movement varialbles 
     float MouseX;
@@ -24,9 +29,6 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        //stores camera object to 'cam' variable
-        cam = GetComponentInChildren<Camera>();
-
         CursorState();
     }
 
@@ -62,8 +64,8 @@ public class CameraController : MonoBehaviour
     void LookAround()
     {
         //to set camera rotation
-        cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        cam.transform.rotation = Quaternion.Euler(xRotation, yRotation, WallRun.Tilt);
         //to set player rotation
-        transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
