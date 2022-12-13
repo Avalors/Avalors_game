@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class WallRunning : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private Transform Orientation;
+    [SerializeField] MovementController MC; 
 
     [Header("Detection")]
     [SerializeField] private float WallDistance = 0.6f;
@@ -17,7 +19,6 @@ public class WallRunning : MonoBehaviour
 
     [Header("Camera")]
     [SerializeField] private Camera Cam;
-    [SerializeField] private float Fov;
     [SerializeField] private float WallRunFov;
     [SerializeField] private float WallRunFovTime;
 
@@ -38,7 +39,7 @@ public class WallRunning : MonoBehaviour
     private Rigidbody rb;
 
 
-    bool CanWallRun()
+    public bool CanWallRun()
     {
         //returns the opposite bool value of if the raycast hits something
         return !Physics.Raycast(transform.position, Vector3.down, MinimumJumpHeight);
@@ -143,8 +144,8 @@ public class WallRunning : MonoBehaviour
         //turns gravity back on when the player stops wall running
         rb.useGravity = true;
 
-        //Lerps the camera field of view to the normal fov
-        Cam.fieldOfView = Mathf.Lerp(Cam.fieldOfView, Fov, WallRunFovTime * Time.deltaTime);
+        //Lerping camera field of view to our wall run fov
+        Cam.fieldOfView = Mathf.Lerp(Cam.fieldOfView, MC.Fov, WallRunFovTime * Time.deltaTime);
 
         //changes camera tilt to 0, which is the normal tilt|
         Tilt = Mathf.Lerp(Tilt, 0, CameraTiltTime * Time.deltaTime);

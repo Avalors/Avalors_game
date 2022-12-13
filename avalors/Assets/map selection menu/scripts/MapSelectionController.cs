@@ -12,9 +12,13 @@ public class MapSelectionController : MonoBehaviour
     [Header("Main menu to load")]
     public string _mainMenuUI;
 
+    //this is our boolean to check if we have started the level.
+    public static bool StartLevel = false;
+
     public void edgeRunners_btn() //my load scene fuction, using void would allow it to be an on-click option
     {
         SceneManager.LoadScene(_newGameLevel); //will load my scene 
+        StartLevel = true;
     }
 
     public void arrowBack_btn()

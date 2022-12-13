@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
     [Header("References")]
     //attribute to store wall running script 
     [SerializeField] WallRunning WallRun;
+    [SerializeField] FinishLine FinishLine;
 
     //sensativity variables: set to serialize field to allow us to edit the private variables (attributes) in the inspector
     [SerializeField] private float SensitivityX = 360f; 
@@ -27,22 +28,44 @@ public class CameraController : MonoBehaviour
     float xRotation;
     float yRotation;
 
+    bool IsFinished = false;
+
     private void Start()
     {
-        CursorState();
+        IsFinished = false;
     }
 
     void CursorState()
     {
-        //makes cursor invislbe and locks it to the center of the screen.
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //under the condition that the player has not reached the finish line
+        if (!IsFinished)
+        {
+            //makes cursor invislbe and locks it to the center of the screen.
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        //if the boolearn returns true
+        else if (IsFinished)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
+
+    void FinishingConditions()
+    {
+        if (FinishLine.Finished)
+        {
+            IsFinished = true;
+        }
     }
 
     private void Update()
     {
         MyInput();
         LookAround();
+        CursorState();
+        FinishingConditions();
     }
 
     void MyInput()

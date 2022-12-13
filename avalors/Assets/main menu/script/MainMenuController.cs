@@ -53,8 +53,12 @@ public class MainMenuController : MonoBehaviour
 
     public IEnumerator ConfirmationBox() //shows prompt
     {
+        //makes the item visible
         confirmationPrompt.SetActive(true);
+
         yield return new WaitForSeconds(2); //shows prompt for 2 seconds
+
+        //makes the item invisible
         confirmationPrompt.SetActive(false);
     }
 }
